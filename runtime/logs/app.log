@@ -1,0 +1,1409 @@
+2015-04-25 16:40:56 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:40:55 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://local-ivideo.ru/web/index.php'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980055.719
+    'REQUEST_TIME' => 1429980055
+]
+2015-04-25 16:41:11 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:41:10 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51609'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980070.68
+    'REQUEST_TIME' => 1429980070
+]
+2015-04-25 16:41:28 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:41:27 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51615'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980087.859
+    'REQUEST_TIME' => 1429980087
+]
+2015-04-25 16:41:29 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:41:28 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51616'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980088.654
+    'REQUEST_TIME' => 1429980088
+]
+2015-04-25 16:41:36 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:41:36 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/index'
+    'REQUEST_URI' => '/web/index.php?r=site/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980096.341
+    'REQUEST_TIME' => 1429980096
+]
+2015-04-25 16:43:57 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:43:57 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51664'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/index.php'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980237.298
+    'REQUEST_TIME' => 1429980237
+]
+2015-04-25 16:54:32 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 16:54:30 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '51907'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429980869.649
+    'REQUEST_TIME' => 1429980869
+]
+2015-04-25 17:45:50 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 17:45:48 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '53038'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429983948.485
+    'REQUEST_TIME' => 1429983948
+]
+2015-04-25 17:46:50 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 17:46:49 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '53057'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429984009.591
+    'REQUEST_TIME' => 1429984009
+]
+2015-04-25 17:48:44 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 17:48:43 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '53131'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429984123.831
+    'REQUEST_TIME' => 1429984123
+]
+2015-04-25 17:49:34 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 17:49:33 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '53150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429984173.575
+    'REQUEST_TIME' => 1429984173
+]
+2015-04-25 17:49:55 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2015-04-25 17:49:55 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '53157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429984194.953
+    'REQUEST_TIME' => 1429984194
+]
+2015-04-25 18:14:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\rest\UrlRule::path' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('path', 'user')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\UrlManager.php(211): yii\BaseYii::createObject(Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\UrlManager.php(153): yii\web\UrlManager->buildRules(Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2-debug\Module.php(125): yii\base\Application->getUrlManager()
+#16 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#18 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->__construct(Array)
+#22 {main}
+2015-04-25 18:14:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '54181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429985677.438
+    'REQUEST_TIME' => 1429985677
+]
+2015-04-25 18:15:19 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::controller' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('controller', 'site')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlRule', Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlRule', Array, Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\UrlManager.php(211): yii\BaseYii::createObject(Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\UrlManager.php(153): yii\web\UrlManager->buildRules(Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2-debug\Module.php(125): yii\base\Application->getUrlManager()
+#16 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#18 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->__construct(Array)
+#22 {main}
+2015-04-25 18:15:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '54192'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429985718.294
+    'REQUEST_TIME' => 1429985718
+]
+2015-04-25 18:32:48 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method app\models\User::find()' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\IndexAction.php:61
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-25 18:32:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '7887e08qb3sp7icr65an42prm3'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=7887e08qb3sp7icr65an42prm3; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '55722'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429986765.04
+    'REQUEST_TIME' => 1429986765
+]
+2015-04-25 19:12:14 [127.0.0.1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\User::username' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('username')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\views\layouts\main.php(40): yii\db\BaseActiveRecord->__get('username')
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(325): require('C:\\Srv55\\Apache...')
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\Srv55\\Apache...', Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('C:\\Srv55\\Apache...', Array, Object(app\controllers\SiteController))
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\controllers\SiteController.php(51): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#12 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2015-04-25 19:12:13 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '8cff2c051aujb6btb7ol2paqs1'
+    '_identity' => 'e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://local-ivideo.ru/site/login'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=8cff2c051aujb6btb7ol2paqs1; _identity=e1d09e82372acca854164955a7a57913c8aa9938215a5da8d2264d214e133536a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429989133.906
+    'REQUEST_TIME' => 1429989133
+]
+2015-04-25 19:15:40 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\LoginForm::login' 
+
+in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\base\Component->__get('login')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\LoginForm), 'login')
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(app\models\LoginForm), 'login', Array)
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\widgets\ActiveField.php(184): yii\helpers\BaseHtml::activeTextInput(Object(app\models\LoginForm), 'login', Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2-bootstrap\ActiveField.php(188): yii\widgets\ActiveField->render(NULL)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\widgets\ActiveField.php(156): yii\bootstrap\ActiveField->render()
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\views\site\login.php(27): yii\widgets\ActiveField->__toString()
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(325): require('C:\\Srv55\\Apache...')
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\Srv55\\Apache...', Array)
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\Srv55\\Apache...', Array, Object(app\controllers\SiteController))
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\controllers\SiteController.php(66): yii\base\Controller->render('login', Array)
+#12 [internal function]: app\controllers\SiteController->actionLogin()
+#13 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#16 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#17 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#19 {main}' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\ErrorHandler.php:234
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Unkn...', 'C:\\Srv55\\Apache...', 234, Array)
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\ErrorHandler.php(234): trigger_error('Exception (Unkn...', 256)
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\views\site\login.php(27): yii\widgets\ActiveField->__toString()
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(325): require('C:\\Srv55\\Apache...')
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\Srv55\\Apache...', Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\Srv55\\Apache...', Array, Object(app\controllers\SiteController))
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\controllers\SiteController.php(66): yii\base\Controller->render('login', Array)
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#13 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#14 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in C:\Srv55\Apache24\htdocs\local-ivideo.ru\views\site\login.php:27
+    in C:\Srv55\Apache24\htdocs\local-ivideo.ru\controllers\SiteController.php:66
+2015-04-25 19:15:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => 's1s8q0ibi0p6cg6vj5p9uqhue2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://local-ivideo.ru/'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=s1s8q0ibi0p6cg6vj5p9uqhue2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57289'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1429989340.135
+    'REQUEST_TIME' => 1429989340
+]
+2015-04-26 13:52:38 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "modelClass" property must be set.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\ActiveController.php:63
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\rest\ActiveController->init()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#2 [internal function]: yii\base\Controller->__construct('getinfo', Object(yii\web\Application), Array)
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('app\\controllers...', Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\\controllers...', Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\\controllers...', Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('getinfo')
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('getinfo')
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('getinfo', Array)
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2015-04-26 13:52:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain; charset=utf-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '56758'
+    'REDIRECT_URL' => '/getinfo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/getinfo'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430056357.911
+    'REQUEST_TIME' => 1430056357
+]
+2015-04-26 13:53:25 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "modelClass" property must be set.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\ActiveController.php:63
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Object.php(107): yii\rest\ActiveController->init()
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#2 [internal function]: yii\base\Controller->__construct('getinfo', Object(yii\web\Application), Array)
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('app\\controllers...', Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\\controllers...', Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\\controllers...', Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('getinfo')
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('getinfo')
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('getinfo', Array)
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2015-04-26 13:53:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '1et9lu8ltng82440s2du008tf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=1et9lu8ltng82440s2du008tf4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '56774'
+    'REDIRECT_URL' => '/getinfo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/getinfo'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430056404.63
+    'REQUEST_TIME' => 1430056404
+]
+2015-04-26 14:08:42 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\VideoController' in file: C:\Srv55\Apache24\htdocs\local-ivideo.ru/controllers/VideoController.php. Namespace missing?' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(563): class_exists('app\\controllers...')
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('video')
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('video')
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('video', Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2015-04-26 14:08:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain; charset=utf-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57197'
+    'REDIRECT_URL' => '/video'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/video'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430057321.793
+    'REQUEST_TIME' => 1430057321
+]
+2015-04-26 14:09:45 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\models\Video' in file: C:\Srv55\Apache24\htdocs\local-ivideo.ru/models/Video.php. Namespace missing?' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Vide...')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\IndexAction.php(61): spl_autoload_call('app\\models\\Vide...')
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\IndexAction.php(44): yii\rest\IndexAction->prepareDataProvider()
+#3 [internal function]: yii\rest\IndexAction->run()
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\Action->runWithParams(Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('video', Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2015-04-26 14:09:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '1et9lu8ltng82440s2du008tf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=1et9lu8ltng82440s2du008tf4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57206'
+    'REDIRECT_URL' => '/video'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/video'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430057384.602
+    'REQUEST_TIME' => 1430057384
+]
+2015-04-26 14:11:02 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\models\Video' in file: C:\Srv55\Apache24\htdocs\local-ivideo.ru/models/Video.php. Namespace missing?' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Vide...')
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\IndexAction.php(61): spl_autoload_call('app\\models\\Vide...')
+#2 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\rest\IndexAction.php(44): yii\rest\IndexAction->prepareDataProvider()
+#3 [internal function]: yii\rest\IndexAction->run()
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\Action->runWithParams(Array)
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('video', Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2015-04-26 14:11:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '1et9lu8ltng82440s2du008tf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=1et9lu8ltng82440s2du008tf4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57224'
+    'REDIRECT_URL' => '/video'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/video'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430057462.067
+    'REQUEST_TIME' => 1430057462
+]
+2015-04-26 14:38:34 [127.0.0.1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'You are requesting with an invalid credential.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:73
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(56): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('video', Array)
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-04-26 14:38:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1\";}'
+    'PHPSESSID' => '1et9lu8ltng82440s2du008tf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=7814d6d886d0d77f39cf6ce9adb856b2fc9d70b8031443e79436a3e1f20e0e14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VoVmT9xVmq3-HuisBRyJmOggAbTw8qO1%22%3B%7D; PHPSESSID=1et9lu8ltng82440s2du008tf4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57630'
+    'REDIRECT_URL' => '/video'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/video'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430059113.562
+    'REQUEST_TIME' => 1430059113
+]
+2015-04-26 15:05:24 [127.0.0.1][-][-][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message 'You are requesting with an invalid credential.' in C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:73
+Stack trace:
+#0 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(56): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#6 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('video', Array)
+#9 C:\Srv55\Apache24\htdocs\local-ivideo.ru\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Srv55\Apache24\htdocs\local-ivideo.ru\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-04-26 15:05:22 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'local-ivideo.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain; charset=utf-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2f85d4e1f486ac745cf360e5cfed432a2e425b9bd68984d8b50e7f8606759cf3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HZdjeYBtigdKFmbSbkiSi9XzX0_lYTbR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\EgisTec MyWinLocker\\x86;C:\\Program Files\\EgisTec MyWinLocker\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\WinSCP\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\;C:\\Program Files\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\;C:\\Srv55\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) PHP/5.5.23'
+    'SERVER_NAME' => 'local-ivideo.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/Srv55/Apache24/htdocs/local-ivideo.ru/web/index.php'
+    'REMOTE_PORT' => '57940'
+    'REDIRECT_URL' => '/video'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/video'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430060722.202
+    'REQUEST_TIME' => 1430060722
+]
