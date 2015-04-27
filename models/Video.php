@@ -15,8 +15,7 @@ use \yii\db\ActiveRecord;
  * @property string     $newName
  * @property boolean    $isConverted
  * @property integer    $createTime
- * @property integer    $converStartTime
- * @property integer    $convertFinishTime
+ * @property boolean    $status
  * @property integer    $userId
  */
 class Video extends ActiveRecord
@@ -50,8 +49,7 @@ class Video extends ActiveRecord
             'newName' => 'Имя сконвертированного файла',
             'isConverted' => 'Сконвертирован ли фильм',
             'createTime' => 'Дата загрузки файла',
-            'converStartTime' => 'Дата начала конвертации',
-            'convertFinishTime' => 'Дата завершения конвертации',
+            'status' => 'Флаг конвертации',
             'userId' => 'ID пользователя',
         ];
     }

@@ -39,6 +39,7 @@ return [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
             ],
         ],
+        'ffmpeg' => ['class' => 'app\components\FfmpegComponent'],
     ],
     'params' => $params,
 ];

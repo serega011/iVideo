@@ -33,8 +33,7 @@ class m150426_151733_1stmigration extends Migration
             'newName' => Schema::TYPE_STRING,
             'isConverted' => Schema::TYPE_BOOLEAN.' NOT NULL DEFAULT 0',
             'createTime' => Schema::TYPE_INTEGER.' NOT NULL',
-            'converStartTime' => Schema::TYPE_INTEGER.' NOT NULL DEFAULT 0',
-            'convertFinishTime' => Schema::TYPE_INTEGER.' NOT NULL DEFAULT 0',
+            'status' => Schema::TYPE_BOOLEAN.' NOT NULL DEFAULT 0',
             'userId' => Schema::TYPE_INTEGER.' NOT NULL',
         ], 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB');
 
