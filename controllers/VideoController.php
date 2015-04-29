@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\UploadedFile;
 use yii\rest\ActiveController;
 use yii\filters\auth\HttpBasicAuth;
 
@@ -13,6 +14,13 @@ class VideoController extends ActiveController
     // предельное количество одновременных конвертаций
     const PROCESSING_LIMIT = 5;
 
+    // расширение исходного видео файла
+    const EXTENSION_SOURSE = '.flv';
+
+    // расширение преобразованного файла
+    const EXTENSION_DESTINATION = '.mp4';
+
+
     /**
      * @inheritdoc
      */
@@ -20,21 +28,21 @@ class VideoController extends ActiveController
     {
         // send Authorization : Basic base64(token:) in header
         $behaviors = parent::behaviors();
-        $behaviors['authenticator'] = [
-            'class' => HttpBasicAuth::className(),
-        ];
+        $behaviors['authenticator'] = ['class' => HttpBasicAuth::className()];
         return $behaviors;
     }
 
 
     /**
-     * @inheritdoc
+     * currentUserId
+     *
+     * Возвращает ID текущего пользователя
+     *
+     * @return int
      */
-    public function verbs()
+    private function currentUserId()
     {
-        $verbs = parent::verbs();
-        $verbs['upload'] = ['POST'];
-        return $verbs;
+        return \Yii::$app->user->getId();
     }
 
 
@@ -48,14 +56,26 @@ class VideoController extends ActiveController
      */
     public function actionView($id)
     {
-        if (!$id)
-            return false;
+        // пример функции с одной точкой выхода
+        try
+        {
+            if (!$id)
+                throw new Exception("Не выбран ID");
 
-        $video = Video::find()->where(['id' => $id, 'userId' => \Yii::$app->user->getId()])->one();
-        if (!$video)
-            return false;
+            $video = Video::findVideo($id, $this->currentUserId());
+            if (!$video)
+                throw new Exception("Не найдена запись в БД");
 
-        return Yii::$app->ffmpeg->info($video->fileName);
+            $result = Yii::$app->ffmpeg->info($video->fileName);
+        }
+        catch (Exception $e)
+        {
+            // можно сохранить исключение в лог (при желании)
+            // или отдать клиенту (это ведь REST API)
+            $result = false;
+        }
+
+        return $result;
     }
 
 
@@ -68,35 +88,26 @@ class VideoController extends ActiveController
      */
     public function actionCreate()
     {
-        if ($_FILES['data']['error'])
+        try
+        {
+            $uploadedFile = new UploadedFile('data');
+            if (!$uploadedFile)
+                throw new Exception("Ошибка загрузки файла");
+
+            if (!$uploadedFile->checkAllowedExtension(self::EXTENSION_SOURSE))
+                throw new Exception("Расширение файла не соответствует ожидаемому");
+
+            $fileName = $this->documentPath.uniqid().self::EXTENSION_SOURSE;
+            if (!$uploadedFile->upload($fileName))
+                throw new Exception("Ошибка записи");
+        }
+        catch (Exception $e)
+        {
             return false;
+        }
 
-        $postdata = fopen($_FILES['data']['tmp_name'], 'r');
-        if (!$postdata)
-            return false;
-
-        $extension = strtolower(substr($_FILES['data']['name'], strrpos($_FILES['data']['name'], '.')));
-        if ($extension != '.flv')
-            return false;
-
-        $filename = $this->documentPath.uniqid().$extension;
-
-        $fp = fopen($filename, 'w');
-        while ($data = fread($postdata, 1024))
-            fwrite($fp, $data);
-
-        fclose($fp);
-        fclose($postdata);
-
-        // сохраним в БД запись о файле
-        $result = new Video();
-        $result->originalName = $_FILES['data']['name'];
-        $result->fileName = $filename;
-        $result->isConverted = false;
-        $result->createTime = time();
-        $result->userId = \Yii::$app->user->getId();
-        $result->save();
-        return $result;
+        $newName = $this->documentPath.uniqid().self::EXTENSION_DESTINATION;
+        return Video::addVideo($uploadedFile->originalName, $fileName, $newName, $this->currentUserId());
     }
 
 
@@ -111,33 +122,22 @@ class VideoController extends ActiveController
      */
     public function actionUpdate($id)
     {
-        // сколько файлов обрабатывается в текущий момент
-        $count = Video::find()
-            ->where('status = 1')
-            ->count();
-
-        if ($count >= self::PROCESSING_LIMIT)
+        $count = Video::countProcessing();
+        $video = Video::findVideo($id, $this->currentUserId());
+        if ($count >= self::PROCESSING_LIMIT || !$video || $video->isConverted)
             return false;
 
-        $video = Video::find()->where(['id' => $id, 'userId' => \Yii::$app->user->getId()])->one();
-        if (!$video || $video->isConverted)
-            return false;
-
-        $newName = str_replace('.flv', '.mp4', $video->fileName);
-
-        // Устанавливаем флаг конвертации
+        // устанавливаем флаг конвертации
         $video->status = 1;
         $video->save();
 
-        if (!Yii::$app->ffmpeg->convert($video->fileName, $newName))
+        if (!Yii::$app->ffmpeg->convert($video->fileName, $video->newName))
         {
             $video->status = 0;
             $video->save();
             return false;
         }
 
-        // закончили конвертацию
-        $video->newName = $newName;
         $video->isConverted = 1;
         $video->status = 0;
         $video->save();
@@ -155,26 +155,22 @@ class VideoController extends ActiveController
      */
     public function actionDelete($id, $mode = 'original')
     {
-        $video = Video::find()->where(['id' => $id, 'userId' => \Yii::$app->user->getId()])->one();
-        if (!$video)
-            return false;
-
-        if ($mode == 'original')
+        $video = Video::findVideo($id, $this->currentUserId());
+        if ($video && $mode == 'original')
         {
             if (file_exists($video->fileName))
                 unlink($video->fileName);
 
-            if (file_exists($video->newName))
+            if ($video->isConverted && file_exists($video->newName))
                 unlink($video->newName);
 
             $video->delete();
         }
-        else if ($mode == 'converted')
+        else if ($video && $mode == 'converted')
         {
-            if (file_exists($video->newName))
+            if ($video->isConverted && file_exists($video->newName))
                 unlink($video->newName);
 
-            $video->newName = null;
             $video->isConverted = 0;
             $video->status = 0;
             $video->save();
@@ -197,13 +193,10 @@ class VideoController extends ActiveController
      */
     public function actionIndex($id, $mode = 'original')
     {
-        $video = Video::find()->where(['id' => $id, 'userId' => \Yii::$app->user->getId()])->one();
-        if (!$video)
-            return false;
-
-        if ($mode == 'original' && file_exists($video->fileName))
+        $video = Video::findVideo($id, $this->currentUserId());
+        if ($video && $mode == 'original' && file_exists($video->fileName))
             return file_get_contents($video->fileName);
-        else if ($mode == 'converted' && file_exists($video->newName))
+        else if ($video && $mode == 'converted' && $video->isConverted && file_exists($video->newName))
             return file_get_contents($video->newName);
 
         return false;

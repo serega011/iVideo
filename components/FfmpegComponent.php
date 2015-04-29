@@ -25,7 +25,6 @@ class FfmpegComponent extends Component
      */
     public function convert($source, $destination)
     {
-        // отправляем команду через exec
         try
         {
             exec("ffmpeg -sameq -i {$source} {$destination}");

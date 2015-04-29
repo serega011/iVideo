@@ -81,4 +81,56 @@ class Video extends ActiveRecord
         return static::find(['userId' => $userId]);
     }
 
+
+    /**
+     * findVideo
+     *
+     * Получить видео по id и userId
+     *
+     * @param $id
+     * @param $userId
+     * @return ActiveRecord|null
+     */
+    public static function findVideo($id, $userId)
+    {
+        return static::find()->where(['id' => $id, 'userId' => $userId])->one();
+    }
+
+
+    /**
+     * countProcessing
+     *
+     * Сколько видео файлов обрабатывается
+     *
+     * @return int
+     */
+    public static function countProcessing()
+    {
+        return static::find()->where('status = 1')->count();
+    }
+
+
+    /**
+     * addVideo
+     *
+     * Добавить новое видео в БД
+     *
+     * @param $originalName
+     * @param $fileName
+     * @param $newName
+     * @param $userId
+     * @return Video
+     */
+    public static function addVideo($originalName, $fileName, $newName, $userId)
+    {
+        $result = new Video();
+        $result->originalName = $originalName;
+        $result->fileName = $fileName;
+        $result->newName = $newName;
+        $result->isConverted = false;
+        $result->createTime = time();
+        $result->userId = $userId;
+        $result->save();
+        return $result;
+    }
 }
