@@ -20,6 +20,9 @@ use \yii\db\ActiveRecord;
  */
 class Video extends ActiveRecord
 {
+    // предельное количество одновременных конвертаций
+    const PROCESSING_LIMIT = 5;
+
     /**
      * tableName
      *
@@ -107,6 +110,22 @@ class Video extends ActiveRecord
     public static function countProcessing()
     {
         return static::find()->where('status = 1')->count();
+    }
+
+
+    /**
+     * canProcess
+     *
+     * Можно ли обработать новый файл
+     *
+     * @return int|string
+     */
+    public static function canProcess()
+    {
+        if (self::countProcessing() > self::PROCESSING_LIMIT)
+            return false;
+        else
+            return true;
     }
 
 

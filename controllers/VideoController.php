@@ -11,9 +11,6 @@ class VideoController extends ActiveController
     public $modelClass = 'app\models\Video';
     public $documentPath = 'upload/';
 
-    // предельное количество одновременных конвертаций
-    const PROCESSING_LIMIT = 5;
-
     // расширение исходного видео файла
     const EXTENSION_SOURSE = '.flv';
 
@@ -122,9 +119,8 @@ class VideoController extends ActiveController
      */
     public function actionUpdate($id)
     {
-        $count = Video::countProcessing();
         $video = Video::findVideo($id, $this->currentUserId());
-        if ($count >= self::PROCESSING_LIMIT || !$video || $video->isConverted)
+        if (Video::canProcess() || !$video || $video->isConverted)
             return false;
 
         // устанавливаем флаг конвертации
