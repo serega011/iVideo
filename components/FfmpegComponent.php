@@ -7,7 +7,7 @@ use yii\base\Component;
 /**
  * FfmpegComponent
  *
- * Обертка запуска ffmpeg и ffprobe
+ * Launching wrapper for ffmpeg and ffprobe
  *
  * @package app\components
  */
@@ -16,7 +16,7 @@ class FfmpegComponent extends Component
     /**
      * convert
      *
-     * Конвертация медиа файла без изменения размеров и качества
+     * Convert media with same quality
      *
      * @param $source
      * @param $destination
@@ -32,7 +32,7 @@ class FfmpegComponent extends Component
     /**
      * info
      *
-     * Получить информацию о медиа файле в формате JSON
+     * Get info about media in JSON
      *
      * @param $source
      * @return bool

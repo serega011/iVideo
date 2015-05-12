@@ -15,7 +15,7 @@ class LoginForm extends Model
     /**
      * rules
      *
-     * Правила валидации
+     * Validation rules
      *
      * @return array
      */
@@ -33,7 +33,7 @@ class LoginForm extends Model
     /**
      * validatePassword
      *
-     * Проверка пароля
+     * Validate entered password
      *
      * @param string $attribute
      * @param array $params
@@ -52,7 +52,7 @@ class LoginForm extends Model
     /**
      * login
      *
-     * Функция входа (авторизации)
+     * Authorize user
      *
      * @return boolean
      */
@@ -68,7 +68,7 @@ class LoginForm extends Model
     /**
      * getUser
      *
-     * Поиск пользователя по username
+     * Get user by username
      *
      * @return User|null
      */

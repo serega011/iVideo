@@ -7,7 +7,7 @@ use \yii\db\ActiveRecord;
 /**
  * Video
  *
- * Модель видео
+ * Video model
  *
  * @property integer    $id
  * @property string     $originalName
@@ -20,15 +20,15 @@ use \yii\db\ActiveRecord;
  */
 class Video extends ActiveRecord
 {
-    // предельное количество одновременных конвертаций
+    // limit of concurrent media convertations at the same time
     const PROCESSING_LIMIT = 5;
 
     /**
      * tableName
      *
-     * Имя таблицы в БД
+     * Table name
      *
-     * @return String таблица в БД
+     * @return String
      */
     public static function tableName()
     {
@@ -39,7 +39,7 @@ class Video extends ActiveRecord
     /**
      * attributeLabels
      *
-     * Имена полей БД
+     * DB column names
      *
      * @return array
      */
@@ -61,7 +61,7 @@ class Video extends ActiveRecord
     /**
      * getId
      *
-     * Получить первичный ключ
+     * Get the primary key
      *
      * @return mixed
      */
@@ -74,7 +74,7 @@ class Video extends ActiveRecord
     /**
      * findByUserId
      *
-     * Получить записи по userId
+     * Get an element by userId
      *
      * @param $userId
      * @return \yii\db\ActiveQuery
@@ -88,7 +88,7 @@ class Video extends ActiveRecord
     /**
      * findVideo
      *
-     * Получить видео по id и userId
+     * Get an element by id and userId
      *
      * @param $id
      * @param $userId
@@ -103,7 +103,7 @@ class Video extends ActiveRecord
     /**
      * countProcessing
      *
-     * Сколько видео файлов обрабатывается
+     * How many video files are processing now
      *
      * @return int
      */
@@ -116,7 +116,7 @@ class Video extends ActiveRecord
     /**
      * canProcess
      *
-     * Можно ли обработать новый файл
+     * Is it possible to handle one more file at this moment
      *
      * @return int|string
      */
@@ -129,7 +129,7 @@ class Video extends ActiveRecord
     /**
      * addVideo
      *
-     * Добавить новое видео в БД
+     * Add a new element to DB
      *
      * @param $originalName
      * @param $fileName

@@ -8,7 +8,7 @@ use yii\base\Model;
 /**
  * Class UploadedFile
  *
- * Рутинные действия для загрузки файла на сервер
+ * Routine functions to download a file to server
  *
  * @package app\models
  */
@@ -20,41 +20,35 @@ class UploadedFile extends Model
     /**
      * __construct
      *
-     * Конструктор проверят передан ли файл и не возникла ли ошибка
+     * Constructor will check whether a file is transferred or if an error occurred
      *
      * @param array $name
      */
     public function __construct($name)
     {
         $this->originalName = $name;
-        if (isset($_FILES[$name]) && $_FILES[$name]['error'] != UPLOAD_ERR_NO_FILE )
-            return true;
-        else
-            return false;
+        return (isset($_FILES[$name]) && $_FILES[$name]['error'] != UPLOAD_ERR_NO_FILE);
     }
 
 
     /**
      * checkAllowedExtension
      *
-     * Проверка соответствует ли расширение файла ожидаемому
+     * Check whether the file extension the same as expected
      *
      * @param $extension
      * @return bool
      */
     public function checkAllowedExtension($extension)
     {
-        if ($extension == strtolower(strrchr($_FILES[$this->originalName]['name'], '.')))
-            return true;
-        else
-            return false;
+        return ($extension == strtolower(strrchr($_FILES[$this->originalName]['name'], '.')));
     }
 
 
     /**
      * upload
      *
-     * Загрузка файла на сервер
+     * Upload a new file to server
      *
      * @param $newName
      * @return bool

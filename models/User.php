@@ -8,7 +8,7 @@ use \yii\web\IdentityInterface;
 /**
  * User
  *
- * Модель пользователя
+ * User model
  *
  * @property integer $id
  * @property string $username
@@ -20,9 +20,9 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * tableName
      *
-     * Имя таблицы в БД
+     * Table name
      *
-     * @return Имя таблицы в БД
+     * @return String
      */
     public static function tableName()
     {
@@ -33,7 +33,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * rules
      *
-     * Правила валидации
+     * Validation rules
      *
      * @return array
      */
@@ -49,7 +49,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * attributeLabels
      *
-     * Имена полей БД
+     * DB column names
      *
      * @return array
      */
@@ -66,7 +66,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * findIdentity
      *
-     * Поиск по ключу
+     * Get an element by primary key
      *
      * @param int|string $id
      * @return null|IdentityInterface|static
@@ -80,7 +80,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * findIdentityByAccessToken
      *
-     * Поиск по идентификационному токену
+     * Get an element by API token
      *
      * @param mixed $token
      * @param null $type
@@ -98,7 +98,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * getId
      *
-     * Получить первичный ключ
+     * Get the primary key
      *
      * @return int|mixed|string
      */
@@ -111,7 +111,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * getAuthKey
      *
-     * Получить ключ авторизации
+     * Get authtorization key
      *
      * @return mixed|string
      */
@@ -124,7 +124,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * validateAuthKey
      *
-     * Проверить ключ авторизации
+     * Validate authtorization key
      *
      * @param string $authKey
      * @return bool
@@ -138,7 +138,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * findByUsername
      *
-     * Получить запись по username
+     * Get an element by username
      *
      * @param $username
      * @return null|static
@@ -152,7 +152,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * validatePassword
      *
-     * Проверить пароль
+     * Validate password
      *
      * @param $password
      * @return bool

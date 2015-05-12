@@ -15,10 +15,10 @@ class VideoController extends ActiveController
     public $modelClass = 'app\models\Video';
     public $documentPath = 'upload/';
 
-    // расширение исходного видео файла
+    // sourse media file extension
     const EXTENSION_SOURSE = '.flv';
 
-    // расширение преобразованного файла
+    // destination media file extension
     const EXTENSION_DESTINATION = '.mp4';
 
 
@@ -37,7 +37,7 @@ class VideoController extends ActiveController
     /**
      * currentUserId
      *
-     * Возвращает ID текущего пользователя
+     * Get the current user ID
      *
      * @return int
      */
@@ -57,7 +57,6 @@ class VideoController extends ActiveController
      */
     public function actionView($id)
     {
-        // пример функции с одной точкой выхода
         try
         {
             if (!$id)
@@ -71,8 +70,6 @@ class VideoController extends ActiveController
         }
         catch (Exception $e)
         {
-            // можно сохранить исключение в лог (при желании)
-            // или отдать клиенту (это ведь REST API)
             $result = false;
         }
 
@@ -127,7 +124,7 @@ class VideoController extends ActiveController
         if (Video::canProcess() || !$video || $video->isConverted)
             return false;
 
-        // устанавливаем флаг конвертации
+        // Set the convertation flag
         $video->status = 1;
         $video->save();
 
