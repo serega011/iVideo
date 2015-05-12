@@ -20,6 +20,12 @@ class VideoController extends ActiveController
     // destination media file extension
     const EXTENSION_DESTINATION = '.mp4';
 
+    // mode to work with original (uploaded) media
+    const MODE_ORIGINAL = 'original';
+
+    // mode to work with converted (uploaded) media
+    const MODE_CONVERTED = 'converted';
+
 
     /**
      * @inheritdoc
@@ -135,7 +141,6 @@ class VideoController extends ActiveController
             Video::beforeConvertation($id);
             Yii::$app->ffmpeg->convert($video->fileName, $video->newName);
             Video::afterConvertation($id);
-
         }
         catch (ActionCreateException $e)
         {
@@ -154,10 +159,10 @@ class VideoController extends ActiveController
      * @param $id
      * @param string $mode
      */
-    public function actionDelete($id, $mode = 'original')
+    public function actionDelete($id, $mode = self::MODE_ORIGINAL)
     {
         $video = Video::findVideo($id, $this->currentUserId());
-        if ($video && $mode == 'original')
+        if ($video && $mode == self::MODE_ORIGINAL)
         {
             if (file_exists($video->fileName))
                 unlink($video->fileName);
@@ -167,7 +172,7 @@ class VideoController extends ActiveController
 
             $video->delete();
         }
-        else if ($video && $mode == 'converted')
+        else if ($video && $mode == MODE_CONVERTED)
         {
             if ($video->isConverted && file_exists($video->newName))
                 unlink($video->newName);
@@ -190,15 +195,17 @@ class VideoController extends ActiveController
      * @param string $mode
      * @return bool|file content
      */
-    public function actionIndex($id, $mode = 'original')
+    public function actionIndex($id, $mode = self::MODE_ORIGINAL)
     {
         $video = Video::findVideo($id, $this->currentUserId());
-        if ($video && $mode == 'original' && file_exists($video->fileName))
-            return file_get_contents($video->fileName);
-        else if ($video && $mode == 'converted' && $video->isConverted && file_exists($video->newName))
-            return file_get_contents($video->newName);
+        if ($video && $mode == self::MODE_ORIGINAL && file_exists($video->fileName))
+            $result = file_get_contents($video->fileName);
+        else if ($video && $mode == MODE_CONVERTED && Video::isConverted($id) && file_exists($video->newName))
+            $result = file_get_contents($video->newName);
+        else
+            $result = false;
 
-        return false;
+        return $result;
     }
 
 }
