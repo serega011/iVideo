@@ -72,9 +72,23 @@ class Video extends ActiveRecord
 
 
     /**
+     * findById
+     *
+     * Get element by ID
+     *
+     * @param $id
+     * @return null|static
+     */
+    private static function findById($id)
+    {
+        return self::findOne(['id' => $id]);
+    }
+
+
+    /**
      * findByUserId
      *
-     * Get an element by userId
+     * Get element by userId
      *
      * @param $userId
      * @return \yii\db\ActiveQuery
@@ -88,7 +102,7 @@ class Video extends ActiveRecord
     /**
      * findVideo
      *
-     * Get an element by id and userId
+     * Get element by id and userId
      *
      * @param $id
      * @param $userId
@@ -127,6 +141,21 @@ class Video extends ActiveRecord
 
 
     /**
+     * isConverted
+     *
+     * Is the media already converted?
+     *
+     * @param $id
+     * @return bool
+     */
+    public static function isConverted($id)
+    {
+        $video = self::findById($id);
+        return ($video->isConverted == 1);
+    }
+
+
+    /**
      * addVideo
      *
      * Add a new element to DB
@@ -149,4 +178,36 @@ class Video extends ActiveRecord
         $result->save();
         return $result;
     }
+
+
+    /**
+     * beforeConvertation
+     *
+     * This function must be called before media convertation
+     *
+     * @param $id
+     */
+    public static function beforeConvertation($id)
+    {
+        $video = self::findById($id);
+        $video->status = 1;
+        $video->save();
+    }
+
+
+    /**
+     * afterConvertation
+     *
+     * This function must be called after media convertation
+     *
+     * @param $id
+     */
+    public static function afterConvertation($id)
+    {
+        $video = self::findById($id);
+        $video->status = 0;
+        $video->isConverted = 1;
+        $video->save();
+    }
+
 }

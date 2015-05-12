@@ -3,7 +3,6 @@
 namespace app\controllers;
 
 use Yii;
-use Exception;
 use app\models\Video;
 use app\models\UploadedFile;
 use yii\rest\ActiveController;
@@ -117,29 +116,33 @@ class VideoController extends ActiveController
      * (convert video from flv to mp4)
      *
      * @param $id
-     * @return bool|Video
+     * @return bool|String
      */
     public function actionUpdate($id)
     {
-        $video = Video::findVideo($id, $this->currentUserId());
-        if (Video::canProcess() || !$video || $video->isConverted)
-            return false;
-
-        // Set the convertation flag
-        $video->status = 1;
-        $video->save();
-
-        if (!Yii::$app->ffmpeg->convert($video->fileName, $video->newName))
+        try
         {
-            $video->status = 0;
-            $video->save();
-            return false;
+            $video = Video::findVideo($id, $this->currentUserId());
+            if (!$video)
+                throw new ActionUpdateException("Видео не найдено");
+
+            if (Video::isConverted($id))
+                throw new ActionUpdateException("Видео уже сконвертировано");
+
+            if (!Video::canProcess())
+                throw new ActionUpdateException("Превышен лимит одновременной обработки файлов");
+
+            Video::beforeConvertation($id);
+            Yii::$app->ffmpeg->convert($video->fileName, $video->newName);
+            Video::afterConvertation($id);
+
+        }
+        catch (ActionCreateException $e)
+        {
+            return $e->getMessage();
         }
 
-        $video->isConverted = 1;
-        $video->status = 0;
-        $video->save();
-        return $video;
+        return true;
     }
 
 
