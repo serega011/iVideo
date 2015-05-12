@@ -210,4 +210,20 @@ class Video extends ActiveRecord
         $video->save();
     }
 
+
+    /**
+     * afterRemoveConverted
+     *
+     * This function must be called after removing of the coverted media
+     *
+     * @param $id
+     */
+    public static function afterRemoveConverted($id)
+    {
+        $video = self::findById($id);
+        $video->status = 0;
+        $video->isConverted = 0;
+        $video->save();
+    }
+
 }

@@ -172,9 +172,7 @@ class VideoController extends ActiveController
             if ($video->isConverted && file_exists($video->newName))
                 unlink($video->newName);
 
-            $video->isConverted = 0;
-            $video->status = 0;
-            $video->save();
+            Video::afterRemoveConverted($id);
         }
         else
             return false;
