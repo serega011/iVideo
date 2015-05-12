@@ -59,11 +59,11 @@ class UploadedFile extends Model
         {
             $postdata = fopen($_FILES[$this->originalName]['tmp_name'], 'r');
             if (!$postdata)
-                throw new VideoUploadException("Не удалось открыть входящий файл для чтения");
+                throw new VideoUploadException("Unable to open the input file for reading");
 
             $fp = fopen($newName, 'w');
             if (!$fp)
-                throw new VideoUploadException("Не удалось открыть файл для записи");
+                throw new VideoUploadException("Could not open file for writing");
 
             while ($data = fread($postdata, 1024))
                 fwrite($fp, $data);

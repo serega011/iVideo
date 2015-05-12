@@ -65,11 +65,11 @@ class VideoController extends ActiveController
         try
         {
             if (!$id)
-                throw new ActionViewException("Не выбран ID");
+                throw new ActionViewException("ID not selected");
 
             $video = Video::findVideo($id, $this->currentUserId());
             if (!$video)
-                throw new ActionViewException("Не найдена запись в БД");
+                throw new ActionViewException("No entry was found in the database");
 
             $result = Yii::$app->ffmpeg->info($video->fileName);
         }
@@ -95,10 +95,10 @@ class VideoController extends ActiveController
         {
             $uploadedFile = new UploadedFile('data');
             if (!$uploadedFile)
-                throw new ActionCreateException("Ошибка загрузки файла");
+                throw new ActionCreateException("Error uploading file");
 
             if (!$uploadedFile->checkAllowedExtension(self::EXTENSION_SOURSE))
-                throw new ActionCreateException("Расширение файла не соответствует ожидаемому");
+                throw new ActionCreateException("File extension is not as expected");
 
             $fileName = $this->documentPath.uniqid().self::EXTENSION_SOURSE;
             $uloadResult = $uploadedFile->upload($fileName);
@@ -130,13 +130,13 @@ class VideoController extends ActiveController
         {
             $video = Video::findVideo($id, $this->currentUserId());
             if (!$video)
-                throw new ActionUpdateException("Видео не найдено");
+                throw new ActionUpdateException("Video not found");
 
             if (Video::isConverted($id))
-                throw new ActionUpdateException("Видео уже сконвертировано");
+                throw new ActionUpdateException("Video already converted");
 
             if (!Video::canProcess())
-                throw new ActionUpdateException("Превышен лимит одновременной обработки файлов");
+                throw new ActionUpdateException("Simultaneous processing files limit exceeded");
 
             Video::beforeConvertation($id);
             Yii::$app->ffmpeg->convert($video->fileName, $video->newName);
