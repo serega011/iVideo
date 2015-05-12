@@ -3,7 +3,6 @@
 namespace app\components;
 
 use yii\base\Component;
-use yii\base\InvalidConfigException;
 
 /**
  * FfmpegComponent
@@ -25,15 +24,7 @@ class FfmpegComponent extends Component
      */
     public function convert($source, $destination)
     {
-        try
-        {
-            exec("ffmpeg -sameq -i {$source} {$destination}");
-        }
-        catch (Exception $e)
-        {
-            return false;
-        }
-
+        exec("ffmpeg -sameq -i {$source} {$destination}");
         return true;
     }
 
@@ -48,15 +39,7 @@ class FfmpegComponent extends Component
      */
     public function info($source)
     {
-        try
-        {
-            exec("ffprobe -v quiet -print_format json -show_format -show_streams {$source}", $output);
-        }
-        catch (Exception $e)
-        {
-            return false;
-        }
-
+        exec("ffprobe -v quiet -print_format json -show_format -show_streams {$source}", $output);
         return $output;
     }
 

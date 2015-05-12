@@ -28,7 +28,7 @@ class Video extends ActiveRecord
      *
      * Имя таблицы в БД
      *
-     * @return Имя таблицы в БД
+     * @return String таблица в БД
      */
     public static function tableName()
     {
@@ -122,10 +122,7 @@ class Video extends ActiveRecord
      */
     public static function canProcess()
     {
-        if (self::countProcessing() > self::PROCESSING_LIMIT)
-            return false;
-        else
-            return true;
+        return (self::countProcessing() <= self::PROCESSING_LIMIT);
     }
 
 
