@@ -60,17 +60,17 @@ class VideoController extends ActiveController
         try
         {
             if (!$id)
-                throw new Exception("Не выбран ID");
+                throw new ActionViewException("Не выбран ID");
 
             $video = Video::findVideo($id, $this->currentUserId());
             if (!$video)
-                throw new Exception("Не найдена запись в БД");
+                throw new ActionViewException("Не найдена запись в БД");
 
             $result = Yii::$app->ffmpeg->info($video->fileName);
         }
-        catch (Exception $e)
+        catch (ActionViewException $e)
         {
-            $result = false;
+            $result = $e->getMessage();
         }
 
         return $result;
@@ -90,18 +90,19 @@ class VideoController extends ActiveController
         {
             $uploadedFile = new UploadedFile('data');
             if (!$uploadedFile)
-                throw new Exception("Ошибка загрузки файла");
+                throw new ActionCreateException("Ошибка загрузки файла");
 
             if (!$uploadedFile->checkAllowedExtension(self::EXTENSION_SOURSE))
-                throw new Exception("Расширение файла не соответствует ожидаемому");
+                throw new ActionCreateException("Расширение файла не соответствует ожидаемому");
 
             $fileName = $this->documentPath.uniqid().self::EXTENSION_SOURSE;
-            if (!$uploadedFile->upload($fileName))
-                throw new Exception("Ошибка записи");
+            $uloadResult = $uploadedFile->upload($fileName);
+            if ($uloadResult !== true)
+                throw new ActionCreateException($uloadResult);
         }
-        catch (Exception $e)
+        catch (ActionCreateException $e)
         {
-            return false;
+            return $e->getMessage();
         }
 
         $newName = $this->documentPath.uniqid().self::EXTENSION_DESTINATION;
