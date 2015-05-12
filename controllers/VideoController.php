@@ -65,11 +65,15 @@ class VideoController extends ActiveController
         try
         {
             if (!$id)
+            {
                 throw new ActionViewException("ID not selected");
+            }
 
             $video = Video::findVideo($id, $this->currentUserId());
             if (!$video)
+            {
                 throw new ActionViewException("No entry was found in the database");
+            }
 
             $result = Yii::$app->ffmpeg->info($video->fileName);
         }
@@ -95,15 +99,22 @@ class VideoController extends ActiveController
         {
             $uploadedFile = new UploadedFile('data');
             if (!$uploadedFile)
+            {
                 throw new ActionCreateException("Error uploading file");
+            }
 
             if (!$uploadedFile->checkAllowedExtension(self::EXTENSION_SOURSE))
+            {
                 throw new ActionCreateException("File extension is not as expected");
+            }
 
             $fileName = $this->documentPath.uniqid().self::EXTENSION_SOURSE;
             $uloadResult = $uploadedFile->upload($fileName);
             if ($uloadResult !== true)
+            {
                 throw new ActionCreateException($uloadResult);
+            }
+
         }
         catch (ActionCreateException $e)
         {
@@ -130,13 +141,19 @@ class VideoController extends ActiveController
         {
             $video = Video::findVideo($id, $this->currentUserId());
             if (!$video)
+            {
                 throw new ActionUpdateException("Video not found");
+            }
 
             if (Video::isConverted($id))
+            {
                 throw new ActionUpdateException("Video already converted");
+            }
 
             if (!Video::canProcess())
+            {
                 throw new ActionUpdateException("Simultaneous processing files limit exceeded");
+            }
 
             Video::beforeConvertation($id);
             Yii::$app->ffmpeg->convert($video->fileName, $video->newName);
@@ -165,17 +182,23 @@ class VideoController extends ActiveController
         if ($video && $mode == self::MODE_ORIGINAL)
         {
             if (file_exists($video->fileName))
+            {
                 unlink($video->fileName);
+            }
 
             if ($video->isConverted && file_exists($video->newName))
+            {
                 unlink($video->newName);
+            }
 
             $video->delete();
         }
         else if ($video && $mode == MODE_CONVERTED)
         {
             if ($video->isConverted && file_exists($video->newName))
+            {
                 unlink($video->newName);
+            }
 
             Video::afterRemoveConverted($id);
         }
@@ -199,11 +222,17 @@ class VideoController extends ActiveController
     {
         $video = Video::findVideo($id, $this->currentUserId());
         if ($video && $mode == self::MODE_ORIGINAL && file_exists($video->fileName))
+        {
             $result = file_get_contents($video->fileName);
+        }
         else if ($video && $mode == MODE_CONVERTED && Video::isConverted($id) && file_exists($video->newName))
+        {
             $result = file_get_contents($video->newName);
+        }
         else
+        {
             $result = false;
+        }
 
         return $result;
     }
