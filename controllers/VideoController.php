@@ -35,6 +35,16 @@ class VideoController extends ActiveController
         // send Authorization : Basic base64(token:) in header
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = ['class' => HttpBasicAuth::className()];
+        $behaviors['verbs'] = ['class' => VerbFilter::className(),
+                                    'actions' => [
+                                        'index'  => ['GET'],
+                                        'view'   => ['GET'],
+                                        'create' => ['PUT'],
+                                        'update' => ['POST', 'PATCH'],
+                                        'delete' => ['DELETE'],
+                                    ]
+                              ];
+
         return $behaviors;
     }
 
@@ -89,7 +99,7 @@ class VideoController extends ActiveController
     /**
      * actionCreate
      *
-     * POST /resource -> actionCreate -> Create the resource
+     * PUT /resource -> actionCreate -> Create the resource
      *
      * @return bool|Video
      */
@@ -129,7 +139,7 @@ class VideoController extends ActiveController
     /**
      * actionUpdate
      *
-     * PUT, PATCH /resource/{id} -> actionUpdate -> Update the resource
+     * POST, PATCH /resource/{id} -> actionUpdate -> Update the resource
      * (convert video from flv to mp4)
      *
      * @param $id
